@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <title>Материалы</title>
+        <link rel = "stylesheet" type = "text/css" href = "styleHP.css">
+        <link rel = "stylesheet" type = "text/css" href = "carusel.css">
+        <link rel = "stylesheet" type = "text/css" href = "text.css">
+    </head>
+    <body>
+        <header><div class = "imgh"></div></header>
+        <div class = "menu-main">
+            <ul>
+                <li><a href = "index.html">Главная</a></li>
+                <li><a href = "izdelia.html">Изделия</a></li>
+                <li><a href = "material.html">Материалы</a></li>
+                <li><a href = "blog.html">Блог</a></li>
+                <li><a href = "company.html">О нас</a></li>
+                <li><a href = "filial.html">Филиалы</a></li>
+                <li><a href = "otz.html">Отзывы</a></li>
+            </ul>
+        </div>
+        <h1>Каталог материалов</h1>
+        <div class = "cent">На данной странице представлен перечнь используемых материалов</div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 7</div>
+              <img src="топаз.jpg" style="width:100%">
+              <div class="text">Топаз</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 7</div>
+              <img src="янтарь.jpg" style="width:100%">
+              <div class="text">Янтарь</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 7</div>
+              <img src="бриллиант.jpg" style="width:100%">
+              <div class="text">Бриллиант</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="жемчуг.jpg" style="width:100%">
+                <div class="text">Жемчуг</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="золото.jpg" style="width:100%">
+                <div class="text">Золото</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="рубин.jpg" style="width:100%">
+                <div class="text">Рубин</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="изумруд.jpg" style="width:100%">
+                <div class="text">Изумруд</div>
+              </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <div class = "cent">С полным перечнем материалов Вы можете ознакомится в наших филиалах</div>
+            <div class = "butpos"><button onclick="window.location.href = 'filial.html' " class = "but1">Филиалы</button></div>
+        <div class = "footer">
+            <table>
+              <tr>
+                <td class = "td1">
+                    <p>График работы</p>
+                    <p>Пн - Пт: 09.00-21.00</p>
+                    <p>Сб - Вс: выходной</p>
+                </td>
+                <td class = "td2">
+                    <p>Ювелирная мастерская</p>
+                    <p>2020</p>
+                </td>
+                <td class = "td3">
+                    <p>Круглосуточная поддержка:</p>
+                    <p>8-915-972-91-37</p>
+                </td>
+            </tr>  
+            </table>
+        </div>
+    </body>
+</html>

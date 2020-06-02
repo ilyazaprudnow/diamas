@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+body
+{
+    font-family: 'Oswald';
+    margin:0;
+    padding:0;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+.imgh
+{
+    width: 100%;
+    background-image: url('шапка.jpg');
+    background-position-x: left;
+    background-position-y: center;
+    background-position: center;
+    box-shadow: 0px 25px 250px rgba(0, 0, 0, 0.25);
+    height: 500px;
+    margin:0;
+    padding:0;
+}
+td{
+  border-color:black;
+  border-collapse:10px;
+}
+.imgi
+{
+    width: 100%;
+    height: 500px;
+    background-position: -2050px center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, #6491CF 100%), url(i011R86H1.jpg);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    font-size: 41px;
+    
+}
+.img2
+{
+    width: 100%;
+    height: 814px;
+    margin:50px 0 0 0;
+    padding:0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, #6491CF 100%), url(1156837.jpg);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    font-size: 41px;
+}
+.img3
+{
+    width:100%;
+    height: 1100px;
+    margin: 50px 0 0 0;
+    padding:0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 42.71%, #6491CF 100%), url(rabotajuvelir.jpg);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    font-size: 41px;
+    
+}
+
+
+
+img
+{
+  width: 264px;
+  height: 250px;
+  left: 32px;
+  top: 1739px; 
+  box-shadow: 18px 18px 50px rgba(0, 0, 0, 0.25);
+}
+
+.hb
+{
+  font-family: Oswald;
+font-style: normal;
+font-weight: 200;
+font-size: 40px;
+line-height: 100px;
+text-align: center;
+}
+
+.but1
+{
+  font-family: Oswald;
+  font-size: 20px;
+  text-align: center;
+  background-color:#5F81B4;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+}
+.but1:hover
+{
+  box-shadow: inset 0 0 0 3px rgb(49, 80, 124);
+}
+
+img:hover {
+  box-shadow:
+    1px 1px #366286,
+    2px 2px #366286,
+    3px 3px #366286,
+    4px 4px #366286,
+    5px 5px #366286,
+    6px 6px #366286,
+    7px 7px #366286;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+
+.butpos
+{
+  width:100%;
+  height: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+
+table
+{
+  width:100%;
+  height: 170px;
+}
+.td1
+{
+  text-align:center;
+  width: 25%;
+}
+.td2{
+  text-align:center;
+  width:50%;
+}
+.td3
+{
+  text-align:center;
+  width: 25%;
+}
+.footer
+{
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  margin:50px 0 0 0;
+  background: linear-gradient(117.87deg, rgba(255, 255, 255, 0) -17.49%, rgba(189, 208, 234, 0.458333) 22.95%, #6F99D2 62.55%), #6F99D2;
+  box-shadow: 0px -15px 50px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+
+
+
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 25px 0 5px;
+    text-align: center;
+    background:#6491CF;
+  }
+  .menu-main li {display: inline-block;}
+ 
+  .menu-main li:last-child:after {content: none;}
+  .menu-main a {
+    text-decoration: none;
+    font-family: url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+  }
+  .menu-main a, .menu-main a:visited {color: #ffffff;}
+  .menu-main a.current, .menu-main a:hover{color: #feb386;}
+  .menu-main a:before,
+  .menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+  }
+  .menu-main a:hover:before, .menu-main .current:before {left: 0;}
+  .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+  @media (max-width: 550px) {
+  .menu-main {padding-top: 0;}
+  .menu-main li {display: block;}
+  .menu-main li:after {content: none;}
+  .menu-main a {
+    padding: 25px 0 20px; 
+    margin: 0 30px;
+  }
+  }
+
+.p1
+{
+  text-align: center;
+}
